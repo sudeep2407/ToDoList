@@ -1,0 +1,144 @@
+
+#main {
+    background-color: bisque;
+    width: 40vw;
+    min-width: 400px;
+    height: auto;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px 3px rgb(148, 115, 115);
+}
+
+/*styling for the text input panel*/
+#toDoInput {
+    text-align: center;
+    padding: 15px 10px 5px 10px;
+}
+
+#taskInput {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#taskInput i{
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+}
+
+#todo {
+    margin: 5px;
+    background-color: azure;
+    border-radius: 8px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    padding-left: 35px;   
+    border: none;
+}
+
+/*styling for the Add button*/
+#addTask {
+    width: 12%;
+    height: 40px;
+    margin-top: 6px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(53, 39, 22);
+    border: none;
+}
+
+.disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+/*styling for the "Complete All" and  "Clear Completed" buttons*/
+
+#taskControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#completeAll {
+    cursor: pointer;
+}
+
+#clearAll {
+    cursor: pointer;
+}
+
+/* styling for the tasks in the task list */
+
+#showToDo {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#todoList {
+    list-style: none;
+    font-size: 1.3rem;
+    padding-inline-start: 0;
+}
+
+.listItems {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px #6e3e3e;
+}
+
+.listItems:hover {
+    background-color: #ffd207;
+}
+
+.todoText {
+    width: 80%;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #05b84f;
+}
+
+/* styling for the task filters at the footer of the list */
+#listFooter {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#listFooter p{
+    margin:0;
+}
+
+#taskLeft {
+    width:50%;
+    font-weight: bold;
+}
+
+#allTasks {
+    width:10%;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+#completedTasks {
+    width:20%;
+    text-align: right;
+    cursor: pointer;
+}
+#incompleteTasks {
+    width:20%;
+    text-align: right;
+    cursor: pointer;
+}

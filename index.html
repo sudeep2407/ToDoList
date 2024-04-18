@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a9c2ad44f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "main">
+        <div id = "toDoInput">
+            <div id = "taskInput">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <input type="text" name="todo" id="todo" placeholder="Type your todo here .."><br>
+                <button id = "addTask" class="disabled">Add</button>
+            </div>
+            <div id = "taskControls">
+                <a id = "completeAll"><i class="fa-solid fa-check-double"></i> Complete all tasks</a>
+                <a id = "clearAll">Clear completed</a>
+            </div>
+            <hr>
+        </div>
+        <div id = "showToDo">
+            <ul id = "todoList">
+            </ul>
+            <hr>
+        </div>
+        <div id = "listFooter">
+            <p id = "taskLeft">Tasks Left : </p>
+            <p id = "allTasks">All</p>
+            <p id = "completedTasks">Completed</p>
+            <p id = "incompleteTasks">Incomplete</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
