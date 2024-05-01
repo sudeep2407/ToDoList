@@ -144,6 +144,7 @@
     cursor: pointer;
 }
 
+
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     #main {
@@ -151,5 +152,8 @@
     }
     #taskLeft {
         width: 35%;
+    }
+    #listFooter {
+        justify-content: space-evenly;
     }
 }
