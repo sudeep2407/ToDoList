@@ -103,6 +103,7 @@
 
 .todoText {
     width: 80%;
+    overflow-wrap: break-word;
 }
 
 .completed {
