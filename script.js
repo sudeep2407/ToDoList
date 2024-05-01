@@ -5,8 +5,8 @@ let addTask = document.getElementById("addTask");
 // once the user puts values in the input field , the "Add" button will be activated. 
 //the user can also press enter to add the task to the list.
 
-taskInput.addEventListener("keypress", function(event) {
-    if(taskInput.value != "")  {
+taskInput.addEventListener("keyup", function(event) {
+    if(taskInput.value.trim() != "")  {
         addTask.classList.remove("disabled");
         if(event.key === "Enter") {
             addNewTask(taskInput);
@@ -16,7 +16,7 @@ taskInput.addEventListener("keypress", function(event) {
 
 // activate the "Add" button once some text is inserted in the text box.
 addTask.addEventListener("click", function() {
-    if(taskInput.value != "" && !addTask.classList.contains("disabled"))  {
+    if(taskInput.value.trim() != "" && !addTask.classList.contains("disabled"))  {
         addNewTask(taskInput);
     }
 })
