@@ -2,7 +2,8 @@
 #main {
     background-color: bisque;
     width: 40vw;
-    min-width: 400px;
+    min-width: 40vw;
+    max-width: 100%;
     height: auto;
     margin: auto;
     border-radius: 8px;
@@ -141,4 +142,11 @@
     width:20%;
     text-align: right;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    #main {
+        width: 95vw;
+    }
 }
