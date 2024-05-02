@@ -101,6 +101,11 @@
     background-color: #ffd207;
 }
 
+.listItems i:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
 .todoText {
     width: 80%;
     overflow-wrap: break-word;
@@ -144,7 +149,6 @@
     text-align: right;
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
